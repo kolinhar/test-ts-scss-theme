@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-family: Monotype corsiva;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin: 5px;
+}
+
+section {
+  border-radius: 5px;
+}

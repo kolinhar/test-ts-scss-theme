@@ -1,0 +1,8 @@
+@use '../../Themes/dark.module';
+
+/*dark theme*/
+[class~='dark'].section {
+  border-color: dark.$primary-blue;
+  background-color: dark.$background;
+  color: dark.$text-color;
+}

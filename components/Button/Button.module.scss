@@ -1,0 +1,21 @@
+/*general styles*/
+.bouton {
+  border-radius: 5px;
+  border: 3px;
+  border-style: solid;
+  border-color: grey;
+}
+
+.bouton:hover,
+.bouton:focus {
+  box-shadow: 0px 2px 5px black;
+}
+
+.bouton:focus {
+  outline: 0px;
+  border-style: inset;
+}
+
+/*import themes*/
+@import './Dark.module.scss';
+@import './Light.module.scss';

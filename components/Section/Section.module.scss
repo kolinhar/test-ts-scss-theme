@@ -1,0 +1,7 @@
+.section {
+  border: 1px solid grey;
+}
+
+/*import themes*/
+@import './Dark.module.scss';
+@import './Light.module.scss';

@@ -1,0 +1,10 @@
+$primary-blue: #9595ff;
+
+$background: #000;
+$text-color: #fff;
+
+:export {
+  DarkPrimaryBlue: $primary-blue;
+  DarkBackground: $background;
+  DarkTextColor: $text-color;
+}
