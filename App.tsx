@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { memo, useCallback, useState } from 'react';
-import './style.module.scss';
+import './_style.module.scss';
 import Button from './components/Button/Button';
 import Section from './components/Section/Section';
 import InputText from './components/InputText/InputText';
@@ -16,7 +16,7 @@ function App() {
   return (
     <Section className={theme}>
       <article>
-        <h1>Theme List:</h1>
+        <h1>Liste des Thèmes:</h1>
         <nav>
           <ul>
             <li>

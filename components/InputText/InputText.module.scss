@@ -1,7 +1,10 @@
+@use '../../style.module' as main;
+
 .label {
   font-size: 1.1em;
 }
 
 .input {
   font-size: 1.2em;
+  margin: main.$space-md;
 }
