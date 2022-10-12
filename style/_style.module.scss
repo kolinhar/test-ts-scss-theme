@@ -1,20 +1,4 @@
-/*
- * Liste des variables
-*/
-$space-sm: 2px;
-$space-md: 5px;
-$space-lg: 8px;
-$space-xl: 15px;
-
-/*
- * export des variables vers TypeScript si besoin
-*/
-:export {
-  spaceSm: $space-sm;
-  spaceMd: $space-md;
-  spaceLg: $space-lg;
-  spaceXl: $space-xl;
-}
+@use './space.module';
 
 /*
  * Sorte de reset CSS
@@ -31,11 +15,11 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: $space-md;
+  margin: space.$md;
 }
 
 section {
-  border-radius: $space-md;
+  border-radius: space.$md;
 }
 
 label,
@@ -48,7 +32,13 @@ body {
 }
 
 section {
-  padding: $space-sm;
+  padding: space.$sm;
+}
+
+code {
+  display: block;
+  white-space: pre;
+  border: space.$sm inset brown;
 }
 
 /*

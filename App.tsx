@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { memo, useCallback, useState } from 'react';
-import './_style.module.scss';
+import styles from './style/_style.module.scss';
 import Button from './components/Button/Button';
 import Section from './components/Section/Section';
 import InputText from './components/InputText/InputText';
@@ -57,6 +57,9 @@ function App() {
         textLabel="Input de type texte avec son label lié"
         placeholder="un text au pif"
       />
+      <hr />
+      <p>spaces:</p>
+      <code>{JSON.stringify(styles, null, ' ')}</code>
     </Section>
   );
 }
