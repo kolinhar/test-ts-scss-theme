@@ -1,4 +1,4 @@
-@use '../../space.module';
+@use '../../style/space.module';
 
 .label {
   font-size: 1.1em;
@@ -8,3 +8,9 @@
   font-size: 1.2em;
   margin: space.$md;
 }
+
+.input::placeholder {
+  font-weight: bold;
+}
+
+@import './Dark.module.scss';

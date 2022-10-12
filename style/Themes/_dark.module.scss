@@ -1,14 +1,23 @@
+@use '../space.module';
+
 $primary-blue: #9595ff;
 
 $background: #000;
 $text-color: #fff;
 
+$shadow: rgba(255, 255, 255, 0.5);
+
 [class~='dark'] * {
   font-family: cursive;
+}
+
+[class~='dark'] code {
+  box-shadow: inset 3px -3px space.$md $shadow;
 }
 
 :export {
   DarkPrimaryBlue: $primary-blue;
   DarkBackground: $background;
   DarkTextColor: $text-color;
+  DarkShadow: $shadow;
 }

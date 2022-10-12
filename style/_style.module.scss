@@ -1,4 +1,8 @@
-@use './space.module';
+/*
+ * Importation des variables SCSS
+ */
+@use 'space.module';
+@use 'color.module';
 
 /*
  * Sorte de reset CSS
@@ -28,37 +32,55 @@ input {
 }
 
 body {
-  background-color: rgba(255, 200, 200, 0.5);
+  background-color: color.$background;
 }
 
 section {
   padding: space.$sm;
+  display: block;
 }
 
 code {
   display: block;
   white-space: pre;
   border: space.$sm inset brown;
+  padding: space.$md;
+  box-shadow: inset 3px -3px space.$md color.$shadow;
 }
+
+/*
+ * Pas d'export vers typescript ici, cette feuille de style sert
+ * uniquement à définir le style et le comportement par défaut 
+ */
 
 /*
  * Cerise sur la gâteau
  * les medias queries pour le côté responsive
- * (peuvent faire l'objet d'un fichier dédié)
+ * 
+ * Elles peuvent faire l'objet d'un fichier dédié et même 
+ * un fichier par règle (largeur, résolution, orientation, ...)
+*/
+/*
+ * ces règles doivent être génériques et définies par UX
 */
 
-@media (max-width: 250px) {
-  section {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 320px) {
+  nav li {
+    display: block;
+    float: left;
+  }
+
+  section hr {
+    display: none;
   }
 }
 
-@media (min-width: 750px) {
-}
+@media (min-width: 550px) {
+  button {
+    margin: space.$xl;
+  }
 
-@media (min-width: 1080px) {
-}
-
-@media (min-width: 1081px) {
+  section {
+    padding: space.$xl;
+  }
 }

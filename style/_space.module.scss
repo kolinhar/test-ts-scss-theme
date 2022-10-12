@@ -9,9 +9,9 @@ $xl: 15px;
 /*
  * export des variables vers TypeScript si besoin
 */
-// :export {
-//   sm: $sm;
-//   md: $md;
-//   lg: $lg;
-//   xl: $xl;
-// }
+:export {
+  sm: $sm;
+  md: $md;
+  lg: $lg;
+  xl: $xl;
+}

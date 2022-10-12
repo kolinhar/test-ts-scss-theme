@@ -2,6 +2,13 @@
   border: 1px solid grey;
 }
 
+@media (max-width: 320px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /*import themes*/
 @import './Dark.module.scss';
 @import './Light.module.scss';
