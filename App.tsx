@@ -3,6 +3,7 @@ import { memo, useCallback, useState } from 'react';
 import './style.module.scss';
 import Button from './components/Button/Button';
 import Section from './components/Section/Section';
+import InputText from './components/InputText/InputText';
 
 type Theme = 'light' | 'dark' | '';
 
@@ -48,7 +49,14 @@ function App() {
           </ul>
         </nav>
       </article>
+      <hr />
       <Button>Mon Bouton autonome</Button>
+      <Button>Mon autre Bouton</Button>
+      <hr />
+      <InputText
+        textLabel="Input de type texte avec son label lié"
+        placeholder="un text au pif"
+      />
     </Section>
   );
 }

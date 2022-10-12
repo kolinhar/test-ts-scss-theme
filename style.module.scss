@@ -1,12 +1,28 @@
+/*
+ * Liste des variables
+*/
+$space-sm: 2px;
+$space-md: 5px;
+$space-lg: 8px;
+$space-xl: 15px;
+
+/*
+ * export des variables vers TypeScript si besoin
+*/
+:export {
+  spaceSm: $space-sm;
+  spaceMd: $space-md;
+  spaceLg: $space-lg;
+  spaceXl: $space-xl;
+}
+
+/*
+ * Sorte de reset CSS
+*/
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-h1,
-p {
-  font-family: Monotype corsiva;
 }
 
 nav ul {
@@ -15,9 +31,27 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: 5px;
+  margin: $space-md;
 }
 
 section {
-  border-radius: 5px;
+  border-radius: $space-md;
+}
+
+label,
+input {
+  display: block;
+}
+
+/*
+ * Cerise sur la gâteau
+ * les medias queries pour le côté responsive
+ * (peuvent faire l'objet d'un fichier dédié)
+*/
+
+@media (max-width: 250px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
 }

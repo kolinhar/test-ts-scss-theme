@@ -3,6 +3,10 @@ $primary-blue: #9595ff;
 $background: #000;
 $text-color: #fff;
 
+[class~='dark'] * {
+  font-family: cursive;
+}
+
 :export {
   DarkPrimaryBlue: $primary-blue;
   DarkBackground: $background;
