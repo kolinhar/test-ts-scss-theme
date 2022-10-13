@@ -54,33 +54,6 @@ code {
  */
 
 /*
- * Cerise sur la gâteau
- * les medias queries pour le côté responsive
- * 
- * Elles peuvent faire l'objet d'un fichier dédié et même 
- * un fichier par règle (largeur, résolution, orientation, ...)
-*/
-/*
- * ces règles doivent être génériques et définies par UX
-*/
-
-@media (max-width: 320px) {
-  nav li {
-    display: block;
-    float: left;
-  }
-
-  section hr {
-    display: none;
-  }
-}
-
-@media (min-width: 550px) {
-  button {
-    margin: space.$xl;
-  }
-
-  section {
-    padding: space.$xl;
-  }
-}
+ * à inclure en dernier pour garder la priorité
+ */
+@import 'responsive.module';
