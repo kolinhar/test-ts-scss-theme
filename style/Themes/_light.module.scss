@@ -3,8 +3,21 @@ $primary-blue: #0000ff;
 $background: #fff;
 $text-color: rgb(44, 44, 44);
 
-[class~='light'] * {
-  font-family: Monotype corsiva;
+[class~='light'] {
+  * {
+    font-family: Monotype corsiva;
+  }
+
+  button {
+    border-color: $primary-blue;
+    background-color: $background;
+    color: $text-color;
+  }
+  section {
+    border-color: $primary-blue;
+    background-color: $background;
+    color: $text-color;
+  }
 }
 
 :export {

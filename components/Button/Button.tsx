@@ -8,7 +8,11 @@ import './Light.module.scss';
 import './Dark.module.scss';
 */
 const Button = (props: PropsWithChildren) => {
-  return <button className={styles.bouton}>{props.children}</button>;
+  return (
+    <button id="abc" className={styles.bouton}>
+      {props.children}
+    </button>
+  );
 };
 
 export default memo(Button);

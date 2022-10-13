@@ -1,8 +1,0 @@
-@use '../../style/Themes/light.module';
-
-/*light theme*/
-[class~='light'] .bouton {
-  border-color: light.$primary-blue;
-  background-color: light.$background;
-  color: light.$text-color;
-}

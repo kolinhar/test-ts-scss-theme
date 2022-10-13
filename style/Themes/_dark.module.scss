@@ -7,12 +7,33 @@ $text-color: #fff;
 
 $shadow: rgba(255, 255, 255, 0.5);
 
-[class~='dark'] * {
-  font-family: cursive;
-}
+[class~='dark'] {
+  * {
+    font-family: cursive;
+  }
 
-[class~='dark'] code {
-  box-shadow: inset 3px -3px space.$md $shadow;
+  code {
+    box-shadow: inset 3px -3px space.$md $shadow;
+  }
+
+  button {
+    border-color: $primary-blue;
+    background-color: $background;
+    color: $text-color;
+  }
+
+  input {
+    border-color: $primary-blue;
+    background-color: $background;
+    color: $text-color;
+  }
+
+  section {
+    border-color: $primary-blue;
+    background-color: $background;
+    color: $text-color;
+  }
+  
 }
 
 :export {
