@@ -62,7 +62,7 @@ function App() {
         placeholder="un texte au pif"
       />
       <hr />
-      <h1>Typescript SCSS imports:</h1>
+      <h1>Typescript SCSS imports examples:</h1>
       <code>
         spaces: {JSON.stringify(spaces, null, ' ')}
         <br />
