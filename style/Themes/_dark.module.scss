@@ -33,12 +33,11 @@ $shadow: rgba(255, 255, 255, 0.5);
     background-color: $background;
     color: $text-color;
   }
-  
 }
 
 :export {
-  DarkPrimaryBlue: $primary-blue;
-  DarkBackground: $background;
-  DarkTextColor: $text-color;
-  DarkShadow: $shadow;
+  darkPrimaryBlue: $primary-blue;
+  darkBackground: $background;
+  darkTextColor: $text-color;
+  darkShadow: $shadow;
 }
