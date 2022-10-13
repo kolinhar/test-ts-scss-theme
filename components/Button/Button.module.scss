@@ -3,8 +3,8 @@
 
 /*general styles*/
 .bouton {
-  border-radius: 5px;
-  border: 3px;
+  border-radius: space.$md;
+  border: calc(#{space.$xs} + #{space.$sm});
   border-style: solid;
   border-color: grey;
   margin: space.$sm;
@@ -12,10 +12,10 @@
 
 .bouton:hover,
 .bouton:focus {
-  box-shadow: 0px 2px 5px color.$shadow;
+  box-shadow: 0px space.$sm space.$md color.$shadow;
 }
 
 .bouton:focus {
-  outline: 0px;
+  outline: 0;
   border-style: inset;
 }

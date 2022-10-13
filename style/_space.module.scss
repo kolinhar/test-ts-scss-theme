@@ -1,6 +1,7 @@
 /*
  * Liste des variables
 */
+$xs: 1px;
 $sm: 2px;
 $md: 5px;
 $lg: 8px;
@@ -10,6 +11,7 @@ $xl: 15px;
  * export des variables vers TypeScript si besoin
 */
 :export {
+  xs: $xs;
   sm: $sm;
   md: $md;
   lg: $lg;

@@ -1,5 +1,7 @@
+@use '../../style/space.module';
+
 .section {
-  border: 1px solid grey;
+  border: space.$xs solid grey;
 }
 
 @media (max-width: 320px) {

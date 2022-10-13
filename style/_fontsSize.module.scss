@@ -1,0 +1,15 @@
+$xs: 0.5em;
+$sm: 0.75em;
+$md: 1em;
+$lg: 1.2em;
+$xl: 1.5em;
+$xxl: 2em;
+
+:export {
+  xs: $xs;
+  sm: $sm;
+  md: $md;
+  lg: $lg;
+  xl: $xl;
+  xxl: $xxl;
+}
