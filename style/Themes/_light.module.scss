@@ -13,11 +13,12 @@ $text-color: rgb(44, 44, 44);
     background-color: $background;
     color: $text-color;
   }
-  section {
-    border-color: $primary-blue;
-    background-color: $background;
-    color: $text-color;
-  }
+}
+
+section[class~='light'] {
+  border-color: $primary-blue;
+  background-color: $background;
+  color: $text-color;
 }
 
 :export {

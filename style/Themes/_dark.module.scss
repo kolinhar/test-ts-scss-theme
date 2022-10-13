@@ -27,12 +27,12 @@ $shadow: rgba(255, 255, 255, 0.5);
     background-color: $background;
     color: $text-color;
   }
+}
 
-  section {
-    border-color: $primary-blue;
-    background-color: $background;
-    color: $text-color;
-  }
+section[class~='dark'] {
+  border-color: $primary-blue;
+  background-color: $background;
+  color: $text-color;
 }
 
 :export {
