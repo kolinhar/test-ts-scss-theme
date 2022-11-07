@@ -6,10 +6,15 @@ $xl: 1.5em;
 $xxl: 2em;
 
 :export {
-  xs: $xs;
-  sm: $sm;
-  md: $md;
-  lg: $lg;
-  xl: $xl;
-  xxl: $xxl;
+  size: {
+    xs: $xs;
+    sm: $sm;
+    md: $md;
+    lg: $lg;
+    xl: $xl;
+    xxl: $xxl;
+    autre: {
+      rouge: #ff0000;
+    }
+  }
 }

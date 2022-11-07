@@ -3,6 +3,7 @@ import { memo, useCallback, useState } from 'react';
 import './style/_style.module.scss';
 import spaces from './style/_space.module.scss';
 import colors from './style/_color.module.scss';
+import fontsSize from './style/_fontsSize.module.scss';
 import Button from './components/Button/Button';
 import LightTheme from './style/Themes/_light.module.scss';
 import DarkTheme from './style/Themes/_dark.module.scss';
@@ -71,6 +72,8 @@ function App() {
         darkTheme: {JSON.stringify(DarkTheme, null, ' ')}
         <br />
         lightTheme: {JSON.stringify(LightTheme, null, ' ')}
+        <br />
+        fontsSize: {JSON.stringify(fontsSize, null, ' ')}
       </code>
     </Section>
   );
